@@ -5,8 +5,8 @@
 2. Instal modules
 3. Start project
 
-##According to requirements:
-### Unordered
+## According to requirements:
+
 * Search by name - DONE
 * Sorting by type - DONE
 * Show all Pokemons  - DONE
