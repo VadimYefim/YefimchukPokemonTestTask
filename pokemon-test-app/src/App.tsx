@@ -1,3 +1,4 @@
+import axios from 'axios';
 import './App.scss';
 
 import PokemonRouter from './components/common/Router';
