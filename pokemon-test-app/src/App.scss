@@ -1,12 +1,11 @@
-body {
-    background: #e8f6fab8;
-    padding: 2% 10%;
-}
+$border-green: #076501;
+$variablename: value;
+$variablename: value;
 
 @mixin items-border {
     border-radius: 18px;
-    border: 2px #076501 solid;
-    background: aliceblue;
+    border: 2px $border-green solid;
+    background: #8fc4f330;
     color: #486263;
 }
 
@@ -18,6 +17,11 @@ body {
 }
 
 @mixin custom-antd-border {
-    border: 2px #076501 solid;
+    border: 2px $border-green solid;
     background: #d5f8d5b3;
+}
+
+body {
+    background: #e8f6fab8;
+    padding: 2% 10%;
 }

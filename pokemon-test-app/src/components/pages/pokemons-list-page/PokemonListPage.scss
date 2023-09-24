@@ -4,14 +4,6 @@
     .pokemon-toolbar-section {
         margin-bottom: 40px;
 
-        .pokemon-select-popup {
-            background: blue;
-
-            .ant-select-item.ant-select-item-option {
-                background: blue;
-            }
-        }
-
         div.ant-select {
             width: 100%;
             margin-left: -14px;
@@ -45,7 +37,7 @@
         }
 
         button.ant-btn {
-            background: #076501;
+            background: $border-green;
             height: 34px;
         }
     }
