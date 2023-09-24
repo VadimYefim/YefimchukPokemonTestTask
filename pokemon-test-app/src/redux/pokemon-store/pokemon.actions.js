@@ -6,7 +6,20 @@ export const pokemonActions = {
     SET_NEXT_PREVIOUS_DATA: 'SET_NEXT_PREVIOUS_DATA',
 
     SET_FILTERED_POKEMONS: 'SET_FILTERED_POKEMONS',
+
+    SET_CURRENT_POKEMON_DATA: 'SET_CURRENT_POKEMON_DATA',
+    CLEAR_CURRENT_POKEMON_DATA: 'CLEAR_CURRENT_POKEMON_DATA',
 };
+
+export const clearCurrentPokemonData = (payload) => ({
+    type: pokemonActions.CLEAR_CURRENT_POKEMON_DATA,
+    payload,
+});
+
+export const setCurrentPokemonData = (payload) => ({
+    type: pokemonActions.SET_CURRENT_POKEMON_DATA,
+    payload,
+});
 
 export const setFilteredPokemons = (payload) => ({
     type: pokemonActions.SET_FILTERED_POKEMONS,

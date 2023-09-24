@@ -6,3 +6,6 @@ export const selectPokemonsPrevious = (state) => state?.pokemon?.previous;
 
 export const selectFilteredPokemons = (state) =>
     state?.pokemon?.filteredPokemons;
+
+export const selectCurrentPokemonData = (state) =>
+    state?.pokemon?.currentPokemonData;

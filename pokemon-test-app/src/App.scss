@@ -2,3 +2,22 @@ body {
     background: #e8f6fab8;
     padding: 2% 10%;
 }
+
+@mixin items-border {
+    border-radius: 18px;
+    border: 2px #076501 solid;
+    background: aliceblue;
+    color: #486263;
+}
+
+@mixin display-flex-configuration {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@mixin custom-antd-border {
+    border: 2px #076501 solid;
+    background: #d5f8d5b3;
+}

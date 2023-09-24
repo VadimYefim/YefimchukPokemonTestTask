@@ -7,6 +7,8 @@ const pokemonInitialState = {
     previous: null,
 
     filteredPokemons: [],
+
+    currentPokemonData: null,
 };
 
 export const pokemonReducer = (
@@ -14,6 +16,19 @@ export const pokemonReducer = (
     { type, payload }
 ) => {
     switch (type) {
+        case pokemonActions.CLEAR_CURRENT_POKEMON_DATA: {
+            return {
+                ...state,
+                currentPokemonData: null,
+            };
+        }
+        case pokemonActions.SET_CURRENT_POKEMON_DATA: {
+            return {
+                ...state,
+                currentPokemonData: payload,
+            };
+        }
+
         case pokemonActions.SET_FILTERED_POKEMONS: {
             return {
                 ...state,
